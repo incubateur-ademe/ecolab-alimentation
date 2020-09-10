@@ -1,0 +1,629 @@
+[
+  {
+    "nom_francais": "Sauce aïoli, préemballée",
+    "LCI_name": "Aioli sauce (garlic and olive oil mayonnaise), prepacked",
+    "ciqual_code": "11168",
+    "groupe": "aides culinaires et ingrédients divers",
+    "sous_groupe": "sauces",
+    "saison": "mix de consommation FR",
+    "avion": false,
+    "materiau_emballage": "V (PVC)",
+    "Livraison": "Glacé",
+    "Preparation": "Pas de préparation",
+    "DQR": {
+      "overall": "2.49",
+      "P": "2.45",
+      "TiR": "1.71",
+      "GR": "3.25",
+      "TeR": "2.54"
+    },
+    "impact_environnemental": {
+      "Score unique EF": {
+        "synthese": 0.59,
+        "unite": "mPt/kg de produit",
+        "etapes": {
+          "Agriculture": 0.48,
+          "Transformation": 0.06,
+          "Emballage": 0.02,
+          "Transport": 0.02,
+          "Supermarché et distribution": 0.01,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Jaune d'œuf": 0.04,
+          "Ail": 0,
+          "Jus de citron": 0.02,
+          "Huile d'olive": 0.45,
+          "Autres étapes": 0.08
+        }
+      },
+      "Changement climatique": {
+        "synthese": 1.97,
+        "unite": "kg CO2 eq/kg de produit",
+        "etapes": {
+          "Agriculture": 1.1,
+          "Transformation": 0.38,
+          "Emballage": 0.2,
+          "Transport": 0.25,
+          "Supermarché et distribution": 0.03,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Jaune d'œuf": 0.16,
+          "Ail": 0.01,
+          "Jus de citron": 0.06,
+          "Huile d'olive": 1.16,
+          "Autres étapes": 0.57
+        }
+      },
+      "Appauvrissement de la couche d'ozone": {
+        "synthese": 0.29,
+        "unite": "E-06 kg CVC11 eq/kg de produit",
+        "etapes": {
+          "Agriculture": 0.12,
+          "Transformation": 0.08,
+          "Emballage": 0.01,
+          "Transport": 0.06,
+          "Supermarché et distribution": 0.01,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Jaune d'œuf": 0.01,
+          "Ail": 0,
+          "Jus de citron": 0.01,
+          "Huile d'olive": 0.14,
+          "Autres étapes": 0.13
+        }
+      },
+      "Rayonnements ionisants": {
+        "synthese": 0.88,
+        "unite": "kBq U-235 eq/kg de produit",
+        "etapes": {
+          "Agriculture": 0.09,
+          "Transformation": 0.5,
+          "Emballage": 0.06,
+          "Transport": 0.02,
+          "Supermarché et distribution": 0.17,
+          "Consommation": 0.05
+        },
+        "ingredients": {
+          "Jaune d'œuf": 0.03,
+          "Ail": 0,
+          "Jus de citron": 0.01,
+          "Huile d'olive": 0.08,
+          "Autres étapes": 0.75
+        }
+      },
+      "Formation photochimique d'ozone": {
+        "synthese": 13.13,
+        "unite": "E-03 kg NMVOC eq/kg de produit",
+        "etapes": {
+          "Agriculture": 6.13,
+          "Transformation": 5.3,
+          "Emballage": 0.63,
+          "Transport": 0.99,
+          "Supermarché et distribution": 0.06,
+          "Consommation": 0.01
+        },
+        "ingredients": {
+          "Jaune d'œuf": 0.63,
+          "Ail": 0.06,
+          "Jus de citron": 0.33,
+          "Huile d'olive": 10.41,
+          "Autres étapes": 1.69
+        }
+      },
+      "Particules": {
+        "synthese": 0.22,
+        "unite": "E-06 disease inc./kg de produit",
+        "etapes": {
+          "Agriculture": 0.19,
+          "Transformation": 0.01,
+          "Emballage": 0,
+          "Transport": 0.01,
+          "Supermarché et distribution": 0,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Jaune d'œuf": 0.05,
+          "Ail": 0,
+          "Jus de citron": 0.01,
+          "Huile d'olive": 0.14,
+          "Autres étapes": 0.02
+        }
+      },
+      "Acidification terrestre et eaux douces": {
+        "synthese": 0.03,
+        "unite": "mol H+ eq/kg de produit",
+        "etapes": {
+          "Agriculture": 0.03,
+          "Transformation": 0,
+          "Emballage": 0,
+          "Transport": 0,
+          "Supermarché et distribution": 0,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Jaune d'œuf": 0.01,
+          "Ail": 0,
+          "Jus de citron": 0,
+          "Huile d'olive": 0.02,
+          "Autres étapes": 0
+        }
+      },
+      "Eutrophisation terreste": {
+        "synthese": 0.13,
+        "unite": "mol N eq/kg de produit",
+        "etapes": {
+          "Agriculture": 0.12,
+          "Transformation": 0.01,
+          "Emballage": 0,
+          "Transport": 0,
+          "Supermarché et distribution": 0,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Jaune d'œuf": 0.03,
+          "Ail": 0,
+          "Jus de citron": 0,
+          "Huile d'olive": 0.09,
+          "Autres étapes": 0.01
+        }
+      },
+      "Eutrophisation eaux douces": {
+        "synthese": 0.72,
+        "unite": "E-03 kg P eq/kg de produit",
+        "etapes": {
+          "Agriculture": 0.53,
+          "Transformation": 0.13,
+          "Emballage": 0.02,
+          "Transport": 0.02,
+          "Supermarché et distribution": 0.01,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Jaune d'œuf": 0.05,
+          "Ail": 0,
+          "Jus de citron": 0.02,
+          "Huile d'olive": 0.55,
+          "Autres étapes": 0.09
+        }
+      },
+      "Eutrophisation marine": {
+        "synthese": 12.29,
+        "unite": "E-03 kg N eq/kg de produit",
+        "etapes": {
+          "Agriculture": 10.75,
+          "Transformation": 1.06,
+          "Emballage": 0.14,
+          "Transport": 0.31,
+          "Supermarché et distribution": 0.03,
+          "Consommation": 0.01
+        },
+        "ingredients": {
+          "Jaune d'œuf": 1.33,
+          "Ail": 0.19,
+          "Jus de citron": 0.21,
+          "Huile d'olive": 9.26,
+          "Autres étapes": 1.3
+        }
+      },
+      "Utilisation du sol": {
+        "synthese": 34.45,
+        "unite": "Pt/kg de produit",
+        "etapes": {
+          "Agriculture": 28.88,
+          "Transformation": 3.27,
+          "Emballage": 0.19,
+          "Transport": 1.99,
+          "Supermarché et distribution": 0.09,
+          "Consommation": 0.02
+        },
+        "ingredients": {
+          "Jaune d'œuf": 16.98,
+          "Ail": 1.64,
+          "Jus de citron": 3.71,
+          "Huile d'olive": 7.58,
+          "Autres étapes": 4.53
+        }
+      },
+      "Écotoxicité pour écosystèmes aquatiques d'eau douce": {
+        "synthese": 486.78,
+        "unite": "CTUe/kg de produit",
+        "etapes": {
+          "Agriculture": 471.73,
+          "Transformation": 6.07,
+          "Emballage": 5.14,
+          "Transport": 2.58,
+          "Supermarché et distribution": 1.01,
+          "Consommation": 0.25
+        },
+        "ingredients": {
+          "Jaune d'œuf": 7.4,
+          "Ail": 1.22,
+          "Jus de citron": 2.63,
+          "Huile d'olive": 464.1,
+          "Autres étapes": 11.43
+        }
+      },
+      "Épuisement des ressources eau": {
+        "synthese": 12.21,
+        "unite": "m3 depriv./kg de produit",
+        "etapes": {
+          "Agriculture": 11.4,
+          "Transformation": 0.19,
+          "Emballage": 0.54,
+          "Transport": 0.02,
+          "Supermarché et distribution": 0.04,
+          "Consommation": 0.01
+        },
+        "ingredients": {
+          "Jaune d'œuf": 0.34,
+          "Ail": 0.29,
+          "Jus de citron": 1.45,
+          "Huile d'olive": 9.37,
+          "Autres étapes": 0.76
+        }
+      },
+      "Épuisement des ressources énergétiques": {
+        "synthese": 37.23,
+        "unite": "MJ/kg de produit",
+        "etapes": {
+          "Agriculture": 10.04,
+          "Transformation": 14.65,
+          "Emballage": 4.52,
+          "Transport": 3.49,
+          "Supermarché et distribution": 3.52,
+          "Consommation": 1.01
+        },
+        "ingredients": {
+          "Jaune d'œuf": 1.48,
+          "Ail": 0.23,
+          "Jus de citron": 0.79,
+          "Huile d'olive": 12.1,
+          "Autres étapes": 22.63
+        }
+      },
+      "Épuisement des ressources minéraux": {
+        "synthese": 6.24,
+        "unite": "E-06 kg Sb eq/kg de produit",
+        "etapes": {
+          "Agriculture": 4.63,
+          "Transformation": 0.45,
+          "Emballage": 0.09,
+          "Transport": 0.88,
+          "Supermarché et distribution": 0.15,
+          "Consommation": 0.04
+        },
+        "ingredients": {
+          "Jaune d'œuf": 0.25,
+          "Ail": 0.08,
+          "Jus de citron": 0.2,
+          "Huile d'olive": 4.42,
+          "Autres étapes": 1.28
+        }
+      }
+    }
+  },
+  {
+    "nom_francais": "Gâteau aux amandes type financier",
+    "LCI_name": "Almond cake",
+    "ciqual_code": "24664",
+    "groupe": "produits céréaliers",
+    "sous_groupe": "gâteaux et pâtisseries",
+    "saison": "mix de consommation FR",
+    "avion": false,
+    "materiau_emballage": "PS",
+    "Livraison": "Ambiant (long)",
+    "Preparation": "Pas de préparation",
+    "DQR": {
+      "overall": "2.59",
+      "P": "2.38",
+      "TiR": "3.28",
+      "GR": "2.83",
+      "TeR": "1.86"
+    },
+    "impact_environnemental": {
+      "Score unique EF": {
+        "synthese": 0.86,
+        "unite": "mPt/kg de produit",
+        "etapes": {
+          "Agriculture": 0.77,
+          "Transformation": 0.05,
+          "Emballage": 0.02,
+          "Transport": 0.01,
+          "Supermarché et distribution": 0.01,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 0.35,
+          "Beurre": 0.29,
+          "Blanc d'oeuf": 0.11,
+          "Farine de blé": 0.01,
+          "Sucre blanc": 0.03,
+          "Autres étapes": 0.07
+        }
+      },
+      "Changement climatique": {
+        "synthese": 6.11,
+        "unite": "kg CO2 eq/kg de produit",
+        "etapes": {
+          "Agriculture": 5.24,
+          "Transformation": 0.37,
+          "Emballage": 0.3,
+          "Transport": 0.17,
+          "Supermarché et distribution": 0.03,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 0.91,
+          "Beurre": 3.95,
+          "Blanc d'oeuf": 0.46,
+          "Farine de blé": 0.04,
+          "Sucre blanc": 0.16,
+          "Autres étapes": 0.59
+        }
+      },
+      "Appauvrissement de la couche d'ozone": {
+        "synthese": 0.34,
+        "unite": "E-06 kg CVC11 eq/kg de produit",
+        "etapes": {
+          "Agriculture": 0.2,
+          "Transformation": 0.08,
+          "Emballage": 0,
+          "Transport": 0.04,
+          "Supermarché et distribution": 0.02,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 0.07,
+          "Beurre": 0.12,
+          "Blanc d'oeuf": 0.04,
+          "Farine de blé": 0,
+          "Sucre blanc": 0.01,
+          "Autres étapes": 0.1
+        }
+      },
+      "Rayonnements ionisants": {
+        "synthese": 0.95,
+        "unite": "kBq U-235 eq/kg de produit",
+        "etapes": {
+          "Agriculture": 0.23,
+          "Transformation": 0.53,
+          "Emballage": 0,
+          "Transport": 0.01,
+          "Supermarché et distribution": 0.17,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 0.07,
+          "Beurre": 0.13,
+          "Blanc d'oeuf": 0.08,
+          "Farine de blé": 0.01,
+          "Sucre blanc": 0.01,
+          "Autres étapes": 0.65
+        }
+      },
+      "Formation photochimique d'ozone": {
+        "synthese": 15.02,
+        "unite": "E-03 kg NMVOC eq/kg de produit",
+        "etapes": {
+          "Agriculture": 12.65,
+          "Transformation": 0.96,
+          "Emballage": 0.66,
+          "Transport": 0.68,
+          "Supermarché et distribution": 0.07,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 4.77,
+          "Beurre": 6.36,
+          "Blanc d'oeuf": 1.77,
+          "Farine de blé": 0.18,
+          "Sucre blanc": 0.61,
+          "Autres étapes": 1.33
+        }
+      },
+      "Particules": {
+        "synthese": 0.51,
+        "unite": "E-06 disease inc./kg de produit",
+        "etapes": {
+          "Agriculture": 0.47,
+          "Transformation": 0.02,
+          "Emballage": 0.01,
+          "Transport": 0.01,
+          "Supermarché et distribution": 0,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 0.1,
+          "Beurre": 0.22,
+          "Blanc d'oeuf": 0.13,
+          "Farine de blé": 0.01,
+          "Sucre blanc": 0.03,
+          "Autres étapes": 0.02
+        }
+      },
+      "Acidification terrestre et eaux douces": {
+        "synthese": 0.07,
+        "unite": "mol H+ eq/kg de produit",
+        "etapes": {
+          "Agriculture": 0.06,
+          "Transformation": 0,
+          "Emballage": 0,
+          "Transport": 0,
+          "Supermarché et distribution": 0,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 0.01,
+          "Beurre": 0.03,
+          "Blanc d'oeuf": 0.02,
+          "Farine de blé": 0,
+          "Sucre blanc": 0,
+          "Autres étapes": 0
+        }
+      },
+      "Eutrophisation terreste": {
+        "synthese": 0.28,
+        "unite": "mol N eq/kg de produit",
+        "etapes": {
+          "Agriculture": 0.27,
+          "Transformation": 0.01,
+          "Emballage": 0,
+          "Transport": 0,
+          "Supermarché et distribution": 0,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 0.05,
+          "Beurre": 0.12,
+          "Blanc d'oeuf": 0.08,
+          "Farine de blé": 0,
+          "Sucre blanc": 0.02,
+          "Autres étapes": 0.01
+        }
+      },
+      "Eutrophisation eaux douces": {
+        "synthese": 1.17,
+        "unite": "E-03 kg P eq/kg de produit",
+        "etapes": {
+          "Agriculture": 0.97,
+          "Transformation": 0.16,
+          "Emballage": 0.01,
+          "Transport": 0.02,
+          "Supermarché et distribution": 0.01,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 0.41,
+          "Beurre": 0.49,
+          "Blanc d'oeuf": 0.15,
+          "Farine de blé": 0.01,
+          "Sucre blanc": 0.05,
+          "Autres étapes": 0.06
+        }
+      },
+      "Eutrophisation marine": {
+        "synthese": 21.56,
+        "unite": "E-03 kg N eq/kg de produit",
+        "etapes": {
+          "Agriculture": 19.98,
+          "Transformation": 1.21,
+          "Emballage": 0.14,
+          "Transport": 0.2,
+          "Supermarché et distribution": 0.04,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 4.77,
+          "Beurre": 9.77,
+          "Blanc d'oeuf": 3.72,
+          "Farine de blé": 0.64,
+          "Sucre blanc": 1.51,
+          "Autres étapes": 1.15
+        }
+      },
+      "Utilisation du sol": {
+        "synthese": 259.28,
+        "unite": "Pt/kg de produit",
+        "etapes": {
+          "Agriculture": 253.55,
+          "Transformation": 3.95,
+          "Emballage": 0.05,
+          "Transport": 1.63,
+          "Supermarché et distribution": 0.1,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 64.11,
+          "Beurre": 125.87,
+          "Blanc d'oeuf": 47.54,
+          "Farine de blé": 8.36,
+          "Sucre blanc": 9.18,
+          "Autres étapes": 4.21
+        }
+      },
+      "Écotoxicité pour écosystèmes aquatiques d'eau douce": {
+        "synthese": 110.19,
+        "unite": "CTUe/kg de produit",
+        "etapes": {
+          "Agriculture": 98.91,
+          "Transformation": 7.66,
+          "Emballage": 0.7,
+          "Transport": 1.83,
+          "Supermarché et distribution": 1.09,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 49.55,
+          "Beurre": 24.55,
+          "Blanc d'oeuf": 20.72,
+          "Farine de blé": 2.23,
+          "Sucre blanc": 7.05,
+          "Autres étapes": 6.08
+        }
+      },
+      "Épuisement des ressources eau": {
+        "synthese": 31.6,
+        "unite": "m3 depriv./kg de produit",
+        "etapes": {
+          "Agriculture": 31.17,
+          "Transformation": 0.17,
+          "Emballage": 0.16,
+          "Transport": 0.02,
+          "Supermarché et distribution": 0.09,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 27.02,
+          "Beurre": 2.57,
+          "Blanc d'oeuf": 0.95,
+          "Farine de blé": 0.02,
+          "Sucre blanc": 0.63,
+          "Autres étapes": 0.4
+        }
+      },
+      "Épuisement des ressources énergétiques": {
+        "synthese": 50.18,
+        "unite": "MJ/kg de produit",
+        "etapes": {
+          "Agriculture": 24.57,
+          "Transformation": 14.68,
+          "Emballage": 4.67,
+          "Transport": 2.5,
+          "Supermarché et distribution": 3.75,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 11.36,
+          "Beurre": 11.59,
+          "Blanc d'oeuf": 4.13,
+          "Farine de blé": 0.36,
+          "Sucre blanc": 1.62,
+          "Autres étapes": 21.12
+        }
+      },
+      "Épuisement des ressources minéraux": {
+        "synthese": 14.46,
+        "unite": "E-06 kg Sb eq/kg de produit",
+        "etapes": {
+          "Agriculture": 13.12,
+          "Transformation": 0.7,
+          "Emballage": 0.03,
+          "Transport": 0.46,
+          "Supermarché et distribution": 0.16,
+          "Consommation": 0
+        },
+        "ingredients": {
+          "Amande": 8.1,
+          "Beurre": 4.4,
+          "Blanc d'oeuf": 0.7,
+          "Farine de blé": 0.08,
+          "Sucre blanc": 0.38,
+          "Autres étapes": 0.8
+        }
+      }
+    }
+  }
+]

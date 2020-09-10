@@ -1,0 +1,17 @@
+{
+  "name": "agribalyse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^4.10.1",
+    "csv-stringify": "^5.5.0",
+    "fs-extra": "^9.0.1",
+    "xlsx": "^0.16.3"
+  }
+}
