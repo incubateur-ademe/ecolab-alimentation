@@ -73,7 +73,7 @@ items.forEach(item => {
 })
 
 
-const json = Object.keys(aliments).slice(0, 2).map(aliment => {
+const json = Object.keys(aliments).map(aliment => {
   const {Livraison, Préparation, ...synthese} = aliments[aliment].synthese
   const saison = codeSaison[synthese['code saison']]
   const avion = synthese['code avion'] === 1
