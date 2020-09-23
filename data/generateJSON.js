@@ -17,10 +17,21 @@ const synthese = Object.assign({},...parse(synthesisCsvString, {columns: true}).
   })
 ))
 
-const ingredients = Object.assign({},...parse(ingredientsCsvString, {columns: true}).map(item => ({
-    [item['Ciqual code']]: Object.assign({}, ...Object.keys(item).map(k => ({[k.split(/\s+(par|\()/)[0].replace(/"/g, '')]: item[k]})))
-  })
-))
+const ingredients = {}
+parse(ingredientsCsvString, {columns: true}).forEach(item => {
+  ingredients[item['Ciqual code']] = ingredients[item['Ciqual code']] || {}
+  const ingredient = Object.assign({}, ...Object.keys(item).map(k => ({[k.split(/\s+(par|\()/)[0].replace(/"/g, '')]: item[k]})))
+  ingredients[item['Ciqual code']][item['Ingredients']] = ingredient
+  delete ingredient['Ingredients']
+  delete ingredient['Nom Français']
+  delete ingredient['Ciqual AGB']
+  delete ingredient['Ciqual code']
+  delete ingredient['LCI Name']
+  delete ingredient['Groupe d\'aliment']
+  delete ingredient['Sous-groupe d\'aliment']
+  Object.keys(ingredient).forEach(v => ingredient[v] = Number(ingredient[v]))
+
+})
 
 const codeSaison = Object.assign({}, ...units['code saison'].split(' ; ').map(t =>({[t.split(' : ')[0]]: t.split(' : ')[1]})))
 
@@ -63,19 +74,7 @@ items.forEach(item => {
     LCI_name: item['LCI Name'],
     synthese: synthese[item['Code CIQUAL']],
     etapes: steps[item['Code CIQUAL']],
-    ingredients: {}
-  }
-  const ingredient = ingredients[item['Code CIQUAL']]
-  if(ingredient){
-    aliments[item['Code CIQUAL']].ingredients[item['Ingredients']] = ingredient
-    delete ingredient['Ingredients']
-    delete ingredient['Nom Français']
-    delete ingredient['Ciqual AGB']
-    delete ingredient['Ciqual code']
-    delete ingredient['LCI Name']
-    delete ingredient['Groupe d\'aliment']
-    delete ingredient['Sous-groupe d\'aliment']
-    Object.keys(item).forEach(v => item[v] = Number(item[v]))
+    ingredients: ingredients[item['Code CIQUAL']] || {}
   }
 })
 
