@@ -67,8 +67,8 @@ const aliments = {}
 items.forEach(item => {
   aliments[item['Code CIQUAL']] = aliments[item['Code CIQUAL']] || {
     nom_francais: item['Nom du Produit en Français'],
-    ciqual_AGB: item['Ciqual AGB'],
-    ciqual_code: item['Ciqual code'],
+    ciqual_AGB: item['Code AGB'],
+    ciqual_code: item['Code CIQUAL'],
     groupe: item['Groupe d\'aliment'],
     sous_groupe: item['Sous-groupe d\'aliment'],
     LCI_name: item['LCI Name'],
