@@ -17,6 +17,11 @@ const synthese = Object.assign({},...parse(synthesisCsvString, {columns: true}).
   })
 ))
 
+const ingredients = Object.assign({},...parse(ingredientsCsvString, {columns: true}).map(item => ({
+    [item['Ciqual code']]: Object.assign({}, ...Object.keys(item).map(k => ({[k.split(/\s+(par|\()/)[0].replace(/"/g, '')]: item[k]})))
+  })
+))
+
 const codeSaison = Object.assign({}, ...units['code saison'].split(' ; ').map(t =>({[t.split(' : ')[0]]: t.split(' : ')[1]})))
 
 Object.values(synthese).forEach(v => {
@@ -46,30 +51,32 @@ Object.values(steps).forEach(v => {
   delete v['Nom et code']
 })
 
-const items = parse(ingredientsCsvString, {columns: true})
+const items = parse(synthesisCsvString, {columns: true})
 const aliments = {}
 items.forEach(item => {
-  aliments[item['Nom Français']] = aliments[item['Nom Français']] || {
+  aliments[item['Code CIQUAL']] = aliments[item['Code CIQUAL']] || {
     nom_francais: item['Nom Français'],
     ciqual_AGB: item['Ciqual AGB'],
     ciqual_code: item['Ciqual code'],
     groupe: item['Groupe d\'aliment'],
     sous_groupe: item['Sous-groupe d\'aliment'],
     LCI_name: item['LCI Name'],
-    synthese: synthese[item['Ciqual code']],
-    etapes: steps[item['Ciqual code']],
+    synthese: synthese[item['Code CIQUAL']],
+    etapes: steps[item['Code CIQUAL']],
     ingredients: {}
   }
-  const ingredient = Object.assign({}, ...Object.keys(item).map(k => ({[k.split(/\s+(par|\()/)[0].replace(/"/g, '')]: item[k]})))
-  aliments[item['Nom Français']].ingredients[item['Ingredients']] = ingredient
-  delete ingredient['Ingredients']
-  delete ingredient['Nom Français']
-  delete ingredient['Ciqual AGB']
-  delete ingredient['Ciqual code']
-  delete ingredient['LCI Name']
-  delete ingredient['Groupe d\'aliment']
-  delete ingredient['Sous-groupe d\'aliment']
-  Object.keys(item).forEach(v => item[v] = Number(item[v]))
+  const ingredient = ingredients[item['Code CIQUAL']]
+  if(ingredient){
+    aliments[item['Code CIQUAL']].ingredients[item['Ingredients']] = ingredient
+    delete ingredient['Ingredients']
+    delete ingredient['Nom Français']
+    delete ingredient['Ciqual AGB']
+    delete ingredient['Ciqual code']
+    delete ingredient['LCI Name']
+    delete ingredient['Groupe d\'aliment']
+    delete ingredient['Sous-groupe d\'aliment']
+    Object.keys(item).forEach(v => item[v] = Number(item[v]))
+  }
 })
 
 
