@@ -66,7 +66,7 @@ const items = parse(synthesisCsvString, {columns: true})
 const aliments = {}
 items.forEach(item => {
   aliments[item['Code CIQUAL']] = aliments[item['Code CIQUAL']] || {
-    nom_francais: item['Nom Français'],
+    nom_francais: item['Nom du Produit en Français'],
     ciqual_AGB: item['Ciqual AGB'],
     ciqual_code: item['Ciqual code'],
     groupe: item['Groupe d\'aliment'],
@@ -118,7 +118,7 @@ const json = Object.keys(aliments).map(aliment => {
     })
   })
   return {
-    nom_francais: aliment,
+    nom_francais: aliments[aliment].nom_francais,
     LCI_name: aliments[aliment].LCI_name,
     ciqual_code: aliments[aliment].ciqual_code,
     groupe: aliments[aliment].groupe,
