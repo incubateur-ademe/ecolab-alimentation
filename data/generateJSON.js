@@ -33,7 +33,7 @@ parse(ingredientsCsvString, {columns: true}).forEach(item => {
 
 })
 
-const codeSaison = Object.assign({}, ...units['code saison'].split(' ; ').map(t =>({[t.split(' : ')[0]]: t.split(' : ')[1]})))
+// const codeSaison = Object.assign({}, ...units['code saison'].split(' ; ').map(t =>({[t.split(' : ')[0]]: t.split(' : ')[1]})))
 
 Object.values(synthese).forEach(v => {
   delete v['Code AGB']
@@ -64,7 +64,7 @@ Object.values(steps).forEach(v => {
 
 const items = parse(synthesisCsvString, {columns: true})
 const aliments = {}
-items.forEach(item => {
+items.filter(i => i['Code CIQUAL']).forEach(item => {
   aliments[item['Code CIQUAL']] = aliments[item['Code CIQUAL']] || {
     nom_francais: item['Nom du Produit en Français'],
     ciqual_AGB: item['Code AGB'],
@@ -81,11 +81,11 @@ items.forEach(item => {
 
 const json = Object.keys(aliments).map(aliment => {
   const {Livraison, Préparation, ...synthese} = aliments[aliment].synthese
-  const saison = codeSaison[synthese['code saison']]
-  const avion = synthese['code avion'] === 1
+  const saison = synthese['Saisonnalité']
+  const avion = synthese['Transport'] === 1
   const materiau_emballage = synthese['Matériau d\'emballage']
-  delete synthese['code saison']
-  delete synthese['code avion']
+  delete synthese['Saisonnalité']
+  delete synthese['Transport']
   delete synthese['Matériau d\'emballage']
   delete synthese['DQR']
   delete synthese['DQR - Note de qualité de la donnée']
