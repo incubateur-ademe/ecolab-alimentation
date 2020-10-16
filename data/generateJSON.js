@@ -120,6 +120,7 @@ const json = Object.keys(aliments).map(aliment => {
   return {
     nom_francais: aliments[aliment].nom_francais,
     LCI_name: aliments[aliment].LCI_name,
+    ciqual_AGB: aliments[aliment].ciqual_AGB,
     ciqual_code: aliments[aliment].ciqual_code,
     groupe: aliments[aliment].groupe,
     sous_groupe: aliments[aliment].sous_groupe,
