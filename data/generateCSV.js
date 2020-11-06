@@ -11,7 +11,7 @@ fs.ensureDirSync(path.join(__dirname, 'out'))
 console.log('generating synthesis CSV')
 const synthesisWS = workbook.Sheets[workbook.SheetNames[1]]
 let csvToks = XLSX.utils.sheet_to_csv(synthesisWS, {FS:';', rawNumbers: true}).replace(/\r\n/g, ' ').split('\n')
-const synthesisCsvString = stringify(parse(csvToks[1]+'\n'+csvToks.slice(3).join('\n'), {delimiter: ';'}))
+const synthesisCsvString = stringify(parse(csvToks[1]+'\n'+csvToks.slice(3).filter(l => l.length > 26).join('\n'), {delimiter: ';'}))
 fs.writeFileSync(path.join(__dirname, 'out','Agribalyse_' + workbook.SheetNames[1]+'.csv'), synthesisCsvString)
 
 console.log('generating steps details CSV')
@@ -27,7 +27,7 @@ const stepsHeaders = csvToks[3].split(';').map((f,i) => {
 // console.log(stepsHeaders)
 const excludes = []
 stepsHeaders.forEach((f, i) => {if(f.split(' - ').pop() === 'Total') excludes.push(i)})
-const stepsCsvString = stringify(parse(stepsHeaders.filter((s, i) => !excludes.includes(i)).join(';') + '\n' +csvToks.slice(4).map(l => l.split(';').filter((s, i) => !excludes.includes(i)).map(s => s !== '-' ? s : '').join(';')).join('\n'), {delimiter: ';'}))
+const stepsCsvString = stringify(parse(stepsHeaders.filter((s, i) => !excludes.includes(i)).join(';') + '\n' +csvToks.slice(4).map(l => l.split(';').filter((s, i) => !excludes.includes(i)).map(s => s !== '-' ? s : '').join(';')).filter(l => l.length > 101).join('\n'), {delimiter: ';'}))
 fs.writeFileSync(path.join(__dirname, 'out','Agribalyse_' + workbook.SheetNames[2]+'.csv'), stepsCsvString)
 
 console.log('generating ingredients details CSV')
